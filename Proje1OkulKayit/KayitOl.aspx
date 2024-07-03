@@ -17,12 +17,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <meta name="keywords" content="My School Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
     <script>
         addEventListener("load", function () {
-			setTimeout(hideURLbar, 0);
-		}, false);
+            setTimeout(hideURLbar, 0);
+        }, false);
 
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
     </script>
     <!-- //Meta tag Keywords -->
 
@@ -63,7 +63,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <li><a href="index.html">Bize Katıl</a></li>
                             <li>
                                 <!-- First Tier Drop Down -->
-                                <label for="drop-2" class="toggle toogle-2">Pages <span class="fa fa-angle-down"
+                                <label for="drop-2" class="toggle toogle-2">
+                                    Pages <span class="fa fa-angle-down"
                                         aria-hidden="true"></span>
                                 </label>
                                 <a href="#">Sayfalar <span class="fa fa-angle-down" aria-hidden="true"></span></a>
@@ -93,33 +94,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="container py-xl-5 py-lg-3">
             <!-- register  -->
             <div class="modal-body mt-md-2 mt-5">
-                <h3 class="title-w3 mb-5 text-center text-wh font-weight-bold">Register Now</h3>
-                <form action="#" method="post">
+                <h3 class="title-w3 mb-5 text-center text-wh font-weight-bold">Hemen Kaydol</h3>
+                <form action="#" method="post" runat="server">
                     <div class="form-group">
-                        <label class="col-form-label">Username</label>
-                        <input type="text" class="form-control" placeholder="your name" name="Name" required="">
+                        <label class="col-form-label">Kullanıcı Adı</label>
+                        <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" placeholder="Kullanıcı Adınız"></asp:TextBox>
                     </div>
                     <div class="form-group">
-                        <label class="col-form-label">Email</label>
-                        <input type="email" class="form-control" placeholder="loremipsum@email.com" name="Email"
+                        <label class="col-form-label">Mail Adresi</label>
+                        <asp:TextBox ID="TextBox2" runat="server" CssClass="form-control" placeholder="mail@mail.com"></asp:TextBox>
                             required="">
                     </div>
                     <div class="form-group">
-                        <label class="col-form-label">Password</label>
-                        <input type="password" class="form-control" placeholder="*****" name="Password" required="">
+                        <label class="col-form-label">Şehriniz</label>
+                        <asp:TextBox ID="TextBox3" runat="server" CssClass="form-control" placeholder="Şehriniz"></asp:TextBox>
                     </div>
                     <div class="form-group">
-                        <label class="col-form-label">Confirm Password</label>
-                        <input type="password" class="form-control" placeholder="*****" name="Password" required="">
+                        <label class="col-form-label">Şifre</label>
+                        <asp:TextBox ID="TextBox4" runat="server" CssClass="form-control" placeholder="**********" TextMode="Password"></asp:TextBox>
                     </div>
                     <div class="sub-w3l my-3">
                         <div class="sub-w3layouts_hub">
                             <input type="checkbox" id="brand1" value="">
                             <label for="brand1" class="text-li text-style-w3ls">
-                                <span></span>I Accept to the Terms & Conditions</label>
+                                <span></span>Genel koşulları okudum ve kabul ediyorum</label>
                         </div>
                     </div>
-                    <button type="submit" class="btn button-style-w3">Register</button>
+                    <asp:Button ID="Button1" runat="server" Text="Kaydol" CssClass="btn btn-primary" />
                 </form>
             </div>
             <!-- //register -->
@@ -165,8 +166,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="col-lg-2 col-6 footer-grid footer-contact mt-lg-0 mt-4">
                     <h3 class="mb-sm-4 mb-3">Get In Touch</h3>
                     <ul class="list-unstyled">
-                        <li>
-                            +01(24) 8543 8088
+                        <li>+01(24) 8543 8088
                         </li>
                         <li>
                             <a href="mailto:info@example.com">info@example.com</a>
@@ -192,8 +192,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="col-lg-4 footer-grid mt-lg-0 mt-4">
                     <div class="footer-logo">
                         <h2 class="text-lg-center text-center">
-                            <a class="logo text-wh font-weight-bold" href="index.html">
-                                My School</a>
+                            <a class="logo text-wh font-weight-bold" href="index.html">My School</a>
                         </h2>
                     </div>
                 </div>
@@ -206,7 +205,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="container">
             <div class="row">
                 <!-- copyright -->
-                <p class="col-lg-8 copy-right-grids text-wh text-lg-left text-center mt-lg-2">© 2019 My School. All
+                <p class="col-lg-8 copy-right-grids text-wh text-lg-left text-center mt-lg-2">
+                    © 2019 My School. All
                     Rights Reserved | Design by
                     <a href="https://w3layouts.com/" target="_blank">W3layouts</a>
                 </p>
